@@ -54,7 +54,7 @@ Particle.prototype = {
 // Example
 // ----------------------------------------
 
-var MAX_PARTICLES = 280;
+var MAX_PARTICLES = 65000;
 var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
 
 var particles = [];
@@ -67,13 +67,7 @@ var demo = Sketch.create({
 demo.setup = function() {
 
 	// Set off some initial particles.
-	var i, x, y;
 
-	for ( i = 0; i < 20; i++ ) {
-		x = ( demo.width * 0.5 ) + random( -100, 100 );
-		y = ( demo.height * 0.5 ) + random( -100, 100 );
-		demo.spawn( x, y );
-	}
 };
 
 demo.spawn = function( x, y ) {
