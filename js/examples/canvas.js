@@ -72,9 +72,9 @@ demo.setup = function() {
 
 demo.spawn = function( x, y ) {
 
-	if ( particles.length >= MAX_PARTICLES )
+/*	if ( particles.length >= MAX_PARTICLES )
 		pool.push( particles.shift() );
-
+*/
 	particle = pool.length ? pool.pop() : new Particle();
 	particle.init( x, y, random( 5, 40 ) );
 
