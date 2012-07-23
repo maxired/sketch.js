@@ -1,4 +1,3 @@
-
 // ----------------------------------------
 // Particle
 // ----------------------------------------
@@ -39,7 +38,7 @@ Particle.prototype = {
 		this.vy += cos( this.theta ) * 0.1;
 
 		this.radius *= 0.96;
-		this.alive = this.radius > 0.5;
+		this.alive = this.radius > 10;
 	},
 
 	draw: function( ctx ) {
@@ -107,7 +106,7 @@ demo.update = function() {
 		particle = particles[i];
 
 		if ( particle.alive ) particle.move();
-		else pool.push( particles.splice( i, 1 )[0] );
+	//	else pool.push( particles.splice( i, 1 )[0] );
 	}
 };
 
